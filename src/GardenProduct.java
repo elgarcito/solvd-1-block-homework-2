@@ -1,9 +1,7 @@
 
-import abstractClasses.Product;
+import abstractclasses.Product;
 
-import java.util.HashSet;
 import java.util.Objects;
-import java.util.Set;
 
 
 public class GardenProduct extends Product {

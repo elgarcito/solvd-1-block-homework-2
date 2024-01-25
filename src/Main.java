@@ -45,7 +45,7 @@ public class Main {
 
         //Products
         ConstructionProduct sand = new ConstructionProduct("Sand", "White sand", "Tn");
-
+        System.out.println(sand.getRawMaterialDescription());
         //Creating the first Electric product
         ElectricProduct lightBulb = new ElectricProduct("Light bulb 2", "led light bulb");
         //Getting the product name
@@ -61,7 +61,7 @@ public class Main {
         //Checking if lightBulb is equal to lightBulb2 to implement hashCode and equals override
         System.out.println("Electric products are equals?: "+lightBulb.equals(lightBulb2)+"\n");
 
-
+        //Creating GardenProduct Objects
         GardenProduct gardenScissors = new GardenProduct("Big scissors", "Big size scissors to cut grass", false);
         GardenProduct gardenScissors1 = new GardenProduct("Medium scissors", "Medium size scissors to cut grass", false);
         GardenProduct gardenScissors2 = new GardenProduct("Small scissors", "Small size scissors to cut grass", false);
@@ -72,9 +72,15 @@ public class Main {
         GasProduct gasBurner2 = new GasProduct("Gas Burner", "Gas kitchen burner");
         gasBurner2.setStock(8);
         System.out.println("Gas burner stock is: "+gasBurner2.getStock());
-
+        //Creating a HandTool Object
         HandTool handSaw=new HandTool("Hand saw","Small hand saw");
+        System.out.println(handSaw.getProductDescription());
+        //Creating HouseholdItem Objects
         HouseholdItem broom =new HouseholdItem("Big broom","Industrial boom");
+        System.out.println(broom.getProductName());
+        HouseholdItem broom1 =new HouseholdItem("Small broom","House boom");
+        //Creating a WaterProduct Object
         WaterProduct pump1=new WaterProduct("Excelsior pump","20 hp power pump");
+        System.out.println(pump1.getProductName());
     }
 }
